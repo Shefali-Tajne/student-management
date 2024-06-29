@@ -7,4 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'student-management';
+  students: any[] = [];
+  editIndex: number | null = null;
+
+  addStudent(student: any) {
+    if (this.editIndex !== null) {
+      this.students[this.editIndex] = student;
+      this.editIndex = null;
+    } else {
+      this.students.push(student);
+    }
+  }
+
+  editStudent(student: any) {
+    this.editIndex = this.students.indexOf(student);
+    // Populate the form with the student data
+  }
 }

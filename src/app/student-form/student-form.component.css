@@ -1,0 +1,46 @@
+.form-container{
+    display: grid;
+    align-items: center;
+}
+.form-title{
+    margin: 0px 0 24px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 5px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+mat-error {
+    font-size: 12px;
+    color: red;
+}
+
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+    color: white;
+}
+.mat-mdc-progress-spinner .mdc-circular-progress__determinate-circle, .mat-mdc-progress-spinner .mdc-circular-progress__indeterminate-circle-graphic {
+    stroke: var(--mdc-circular-progress-active-indicator-color, transparent);
+}
+.mat-mdc-progress-spinner {
+    --mdc-circular-progress-active-indicator-color: white!important;
+}
+.mdc-circular-progress__determinate-container, .mdc-circular-progress__indeterminate-circle-graphic, .mdc-circular-progress__indeterminate-container, .mdc-circular-progress__spinner-layer {
+    position: absolute;
+    width: 10%!important;
+    height: 10%!important;
+    z-index: 1;
+}
+mat-spinner{
+    width: 30px!important;
+    height: 30px!important;
+}
+.submit-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
